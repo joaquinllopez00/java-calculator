@@ -17,7 +17,7 @@ public class Main {
                 Operation operation = Operation.fromSymbol(symbol);
                 double result = calculator.calculate(num1, num2, operation);
                 System.out.println("Result: " + result);
-            } catch (ArithmeticException e) {
+            } catch (RuntimeException e) {
                 System.out.println("Error: " + e.getMessage());
             }
 

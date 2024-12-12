@@ -16,7 +16,6 @@ public enum Operation {
         return symbol;
     }
 
-    @org.jetbrains.annotations.NotNull
     public static Operation fromSymbol(String symbol) {
         for (Operation op : values()) {
             if (op.getSymbol().equals(symbol)) {
